@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Кино</title>
+    <link rel="stylesheet" href = "./css_styles/video_style.css">
+</head>
+<!--Добавление фавиконки-->
+<link rel = "icon" href = "./images/фавиконка.png" type = "image/x-icon">
+<body> 
+<header>
+    Добро пожаловать в Мир Кино!
+    <div class="return">
+        <a href="index.html">Вернуться на главную страницу</a>
+    </div>
+</header>
+
+<main>
+    <div class="flex-container">
+        <div class="movie-image">
+            <img id="movie-image">
+        </div>
+        <div class="movie-details">
+            <h2 id="movie-title"></h2>
+            <ul>
+                <li id="movie-genre"></li>
+                <li id="movie-duration"></li>
+                <li id="movie-year"></li>
+            </ul>
+            <p id="movie-description"></p>
+        </div> 
+    </div> 
+    
+    <iframe id="movie-trailer" src="URL-адрес-видеофайла" width="100%" height="100%" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <footer>
+        <!--Ссылки на номер телефона и электронную почту в конце страницы-->
+        <address>
+            <a href="tel:+77777777777">+7(777)777-77-77</a>
+            <br>
+            <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+        </address>
+    </footer>
+</main>
+
+<script src="./js/uploading_information_video.js"></script>
+
+</body>
+</html>
