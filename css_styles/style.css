@@ -1,0 +1,174 @@
+/* Общие стили */
+body {
+    background: black url(../images/фон.jpg) center top fixed no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    background-color: #444;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+/* Стили для header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 31px;
+    background-color: black; 
+    -webkit-text-fill-color: azure;
+    
+    font-family: Verdana;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* Стили для main */
+main {
+    position: relative;
+    top: 60px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 20px;
+    background-color: rgb(30, 30, 30);
+}
+
+/* Стили для поисковой формы */
+#search-form {
+    display: flex;
+    justify-content: right;
+    margin-right: 80px;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-size: 14px;
+}
+ 
+/* Стили для flex-контейнера и элементов */
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    -webkit-text-fill-color: beige;
+}
+
+.item {
+    position: relative;
+    background-color: black;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/*Стили для содержимого элементов*/
+.item h2 {
+    text-align: center;
+}
+
+.item ul {
+    list-style-type: none;
+    text-align: left;
+    margin-left: -25px;
+}
+
+.item p {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.4s ease;
+}
+
+.item:hover img {
+    filter: blur(2px) brightness(0.7) contrast(0.9);
+}
+  
+.description {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.item:hover .description {
+    opacity: 1; /*при наведении курсора на картинку появляется текст*/
+}
+
+/* Стили для footer */
+footer {
+    -webkit-text-fill-color: darkorange;
+    height: 60px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+footer address {
+    font-style: italic; 
+}
+
+/* Стили для ссылок */
+.flex-container a:visited {
+    color: beige;
+}
+
+footer a:visited {
+    color: purple;
+}
+
+/* Адаптивная верстка */
+@media screen and (max-width: 750px) {
+    header {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: large;
+    }
+
+    main {
+        top: 80px;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 10px;
+    }
+
+    #search-form {
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+
+    #search-input {
+        font-size: 12px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
