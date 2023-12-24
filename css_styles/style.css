@@ -50,7 +50,6 @@ main {
     background-color: rgb(30, 30, 30);
 }
 
-
 /* Cтили для фильтра */
 .filter-container {
     display: flex;
@@ -170,6 +169,11 @@ footer a:visited {
 @media screen and (max-width: 750px) {
     header {
         font-size: large;
+    }
+
+    header img {
+        position: absolute;
+        right: 10px;
     }
 
     .filter-container {
