@@ -197,4 +197,12 @@ footer a:visited {
         height: 400px;
         width: 300px;
     }
+
+    .item:hover img {
+        filter: none;
+    }
+      
+    .item:hover .description {
+        opacity: 0;
+    }
 }
