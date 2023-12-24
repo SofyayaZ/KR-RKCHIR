@@ -67,7 +67,7 @@ main {
 
 /* Стили для поисковой формы */
 #search-form {
-    margin: 5px;
+    margin: 10px;
     display: flex;
     justify-content: right;
 }
@@ -172,8 +172,12 @@ footer a:visited {
         font-size: large;
     }
 
+    .filter-container {
+        justify-content: center;
+    }
+
     #search-form {
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     #search-input {
