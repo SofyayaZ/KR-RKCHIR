@@ -16,36 +16,60 @@ body::-webkit-scrollbar-thumb {
 
 /* Стили для header */
 header {
+    z-index: 100;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding-top: 20px;
-    padding-bottom: 31px;
+    padding-bottom: 35px;
     background-color: black; 
-    -webkit-text-fill-color: azure;
-    
+    color: azure;
     font-family: Verdana;
     font-size: x-large;
     text-align: center;
 }
 
+/* Стили для иконки регистрации в header */
+header img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+}
+
 /* Стили для main */
 main {
     position: relative;
-    top: 60px;
-    padding-top: 10px;
+    top: 50px;
+    padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
     margin: 20px;
     background-color: rgb(30, 30, 30);
 }
 
-/* Стили для поисковой формы */
-#search-form {
+
+/* Cтили для фильтра */
+.filter-container {
     display: flex;
     justify-content: right;
-    margin-right: 80px;
+}
+
+#genre-filter {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Стили для поисковой формы */
+#search-form {
+    margin: 10px;
+    display: flex;
+    justify-content: right;
 }
 
 #search-input {
@@ -145,22 +169,11 @@ footer a:visited {
 /* Адаптивная верстка */
 @media screen and (max-width: 750px) {
     header {
-        padding-top: 10px;
-        padding-bottom: 5px;
         font-size: large;
-    }
-
-    main {
-        top: 80px;
-        padding-top: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: 10px;
     }
 
     #search-form {
         justify-content: flex-end;
-        margin-right: 40px;
     }
 
     #search-input {
@@ -170,5 +183,10 @@ footer a:visited {
     button[type="submit"] {
         padding: 8px 16px;
         font-size: 12px;
+    }
+
+    .item {
+        height: 300px;
+        width: 225px;
     }
 }
