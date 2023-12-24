@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href = "./css_styles/registration_form.css">
+</head>
+<!--Добавление фавиконки-->
+<link rel = "icon" href = "https://cdn.icon-icons.com/icons2/4035/PNG/96/lamp_bulb_light_business_idea_media_creative_icon_256460.png" type = "image/x-icon">
+<body>
+<form action = "index.html" method = "get">
+    <fieldset>
+        <legend>Персональные данные</legend>
+        <p>
+            <label for = "name">Введите имя: </label>
+            <input type = "text" name = "name" id = "name" required>
+        </p>
+        <p>
+            <label for = "surname">Введите фамилию: </label>
+            <input type = "text" name = "surname" id = "surname" required>
+        </p>
+        <p>
+        Выберете пол: 
+            <label for="male">мужской </label>
+            <input type="radio" name="choice" value="male" id="male">
+            <label for="female">женский </label>
+            <input type="radio" name="choice" value="female" id="female">
+        </p>
+        <p>
+            <label for = "date">Введите дату рождения: </label>
+            <input type = "date" name = "date" id = "date" required> 
+        </p>
+        <p>
+            <label for = "phone">Введите номер телефона: </label>
+            <input type = "tel" name = "phone" id = "phone" required>
+        </p>
+        <p>
+            <label for = "email">Введите email: </label>
+            <input type = "email" name = "email" id = "email" required>
+        </p>
+        <p>
+            <label for = "password">Введите пароль: </label>
+            <input type = "password" name = "password" id = "password" required>
+        </p>
+        <p>
+            <label for = "subscription">Хотели бы получать нашу рассылку?</label>
+            <input type = "checkbox" id = "subscription" name = "subscription">Да
+        </p>
+        <button type = "submit">Отправить</button>
+    </fieldset>
+</form>
+</body>
+</html>
