@@ -32,6 +32,7 @@ header {
 
 
 header .return{
+    margin-top: 5px;
     text-align: right;
 }
 
@@ -53,7 +54,7 @@ header img {
 /* Стили для main */
 main {
     position: relative;
-    top: 60px;
+    top: 70px;
     padding: 10px;
     height: 100%;
     margin: 20px;
@@ -108,12 +109,12 @@ footer a:visited {
         font-size: large;
     }
 
-    header .return a {
-        font-size: medium;
+    header img {
+        right: 10px;
     }
 
     .movie-details {
-        font-size: 14px;
+        font-size: 12px;
     } 
 }
 
