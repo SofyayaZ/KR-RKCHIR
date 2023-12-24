@@ -67,7 +67,7 @@ main {
 
 /* Стили для поисковой формы */
 #search-form {
-    margin: 10px;
+    margin: 5px;
     display: flex;
     justify-content: right;
 }
