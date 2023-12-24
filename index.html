@@ -11,9 +11,28 @@
 <link rel = "icon" href = "./images/фавиконка.png" type = "image/x-icon">
 <body> 
 
-<header>Добро пожаловать в Мир Кино!</header>
+<header>
+    <div class="h">Добро пожаловать в Мир Кино!</div>
+    <a href="registration.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/7177/7177372.png" alt="Картинка регистрации">
+    </a>
+</header>
 
 <main>
+    <!--Фильтр фильмов-->
+    <div class="filter-container">
+        <select id="genre-filter">
+            <option value="all">Все жанры</option>
+            <option value="драма">Детектив</option>
+            <option value="драма">Драма</option>
+            <option value="триллер">Комедия</option>
+            <option value="фантастика">Научная фантастика</option>
+            <option value="приключение">Приключение</option>
+            <option value="триллер">Триллер</option>
+            <option value="фантастика">Фантастика</option>
+        </select>
+    </div>
+    
     <!--Поисковая форма-->
     <form id="search-form">
         <input type="text" id="search-input" placeholder="Введите поисковый запрос">
@@ -23,7 +42,6 @@
 
     <!--Контейнер с фильмами-->
     <div class = "flex-container">
-
         
         <div class="item" data-title="Вышка" data-genre="драма" data-duration="120 минут" data-year="2022" trailer="https://video-preview.s3.yandex.net/GBdjNQIAAAA.mp4">
             <a href="/video.html">
@@ -39,6 +57,7 @@
             </div>
             </a>
         </div>
+
         <div class="item"  data-title="Простая просьба" data-genre="триллер" data-duration="90 минут" data-year="2018" trailer="https://video-preview.s3.yandex.net/4DESAwAAAAA.mp4">
             <a href="./video.html">
             <img src="./images/Простая просьба.png" alt="Простая просьба">
@@ -53,6 +72,7 @@
             </div>
             </a>
         </div>
+
         <div class="item" data-title="Лобстер" data-genre="фантастика, драма" data-duration="120 минут" data-year="2015" trailer="https://video-preview.s3.yandex.net/QTC1dgAAAAA.mp4">
             <a href="./video.html">
             <img src="./images/Лобстер.png" alt="Лобстер">
@@ -164,7 +184,7 @@
             <div class="description">
                 <h2>Таинственный лес</h2>
                 <ul>
-                    <li>Жанр: триллер,драма</li>
+                    <li>Жанр: триллер, драма</li>
                     <li>Длительность: 108 минут</li>
                     <li>Год производства: 2004</li>
                 </ul>
@@ -215,6 +235,9 @@
     </footer>
 </main>
 
+
+<!--Подключаем файл со скриптом для работы фильтра-->
+<script src="./js/filter.js"></script>
 <!--Подключаем файл со скриптом для работы поисковой формы-->
 <script src="./js/app.js"></script>
 <!--Подключаем файл со скриптом для переноса данных в video.html-->
