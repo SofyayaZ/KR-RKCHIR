@@ -194,15 +194,6 @@ footer a:visited {
     }
 
     .item {
-        height: 400px;
-        width: 300px;
-    }
-
-    .item:hover img {
-        filter: none;
-    }
-      
-    .item:hover .description {
-        opacity: 0;
+        font-size: 12px;
     }
 }
