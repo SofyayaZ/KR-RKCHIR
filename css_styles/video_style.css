@@ -54,7 +54,7 @@ header img {
 /* Стили для main */
 main {
     position: relative;
-    top: 70px;
+    top: 80px;
     padding: 10px;
     height: 100%;
     margin: 20px;
@@ -70,6 +70,11 @@ main {
 
 .movie-details {
     font-size: 18px;
+}
+
+.movie-details ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
 
 #movie-image {
@@ -110,11 +115,17 @@ footer a:visited {
     }
 
     header img {
+        position: absolute;
         right: 10px;
     }
 
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .movie-details {
-        font-size: 12px;
+        font-size: 14px;
     } 
 }
 
