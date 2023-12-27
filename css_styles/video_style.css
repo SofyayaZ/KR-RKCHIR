@@ -91,6 +91,20 @@ main {
     margin-left: 20px;
 }
 
+/* Стили для footer */
+footer {
+    -webkit-text-fill-color: darkorange;
+    height: 60px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-style: italic
+}
+
+footer a:visited {
+    color: darkorange;
+}
+
+
 /* Адаптивная верстка */
 @media screen and (max-width: 750px) {
     header {
@@ -111,25 +125,21 @@ main {
         font-size: 14px;
     } 
 }
-
 @media screen and (max-width: 750px) {
     iframe {
         height: 350px;
     }
 }
-
 @media screen and (min-width: 751px) and (max-width: 1000px) {
     iframe {
         height: 450px;
     }
 }
-
 @media screen and (min-width: 1001px) and (max-width: 1440px) {
     iframe {
         height: 600px;
     }
 }
-
 @media screen and (min-width: 1440px) {
     iframe {
         height: 850px;
