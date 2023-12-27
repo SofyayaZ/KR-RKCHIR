@@ -91,23 +91,6 @@ main {
     margin-left: 20px;
 }
 
-/* Стили для footer */
-footer {
-    -webkit-text-fill-color: darkorange;
-    height:60px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    height: 100%
-}
-
-footer address {
-    font-style: italic; 
-}
-
-footer a:visited {
-    color: purple;
-}
-
 /* Адаптивная верстка */
 @media screen and (max-width: 750px) {
     header {
