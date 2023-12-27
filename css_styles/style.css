@@ -158,6 +158,10 @@ footer {
     color: beige;
 }
 
+footer a:visited {
+    color: darkorange;
+}
+
 /* Адаптивная верстка */
 @media screen and (max-width: 750px) {
     header {
