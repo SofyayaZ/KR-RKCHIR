@@ -1,0 +1,124 @@
+/* Общие стили */
+html {
+    height: 100%;
+}
+
+body {
+    background: black url(../images/фон.jpg) center top fixed no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    scrollbar-width: thin;
+    height: 100%;
+    display: flex;
+}
+
+body::-webkit-scrollbar {
+    background-color: #444;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+/* Стили для header */
+header {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: black; 
+    color: azure;
+    font-family: Verdana;
+    font-size: x-large;
+    text-align: center;
+}
+
+header .return{
+    margin-top: 5px;
+    text-align: right;
+}
+
+header .return a {
+    font-family: Arial;
+    font-size: large;
+    color: azure;
+}
+
+/* Стили для main */
+main {
+    flex-grow: 1;
+    position: relative;
+    top: 70px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(30, 30, 30);
+    -webkit-text-fill-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+}
+
+/* Стиль обёртки заголовка */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-item {
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+span {
+    display: block;
+    font-size: 14px;
+}
+
+/* Адаптивная вёрстка */
+@media screen and (max-width: 750px) {
+    header {
+        font-size: large;
+    }
+
+    header .return a {
+        font-size: medium;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
