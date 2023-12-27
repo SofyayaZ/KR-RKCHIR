@@ -111,6 +111,10 @@ footer a:visited {
         font-size: large;
     }
 
+    header .return a {
+        font-size: medium;
+    }
+
     header img {
         position: absolute;
         right: 10px;
