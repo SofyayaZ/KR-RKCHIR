@@ -1,5 +1,17 @@
+/* Общие стили */
 body {
-    background-color: rgba(0,0,0,0.3);
+    background: black url(../images/фон.jpg) center top fixed no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    background-color: #444;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
 }
 
 /* Стили для контейнера с карточками */
@@ -23,7 +35,7 @@ body {
         ".text";
     justify-items: center;
     align-content: center;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out 0.3s;
 }
 
 /* Стили для содержимого карточек */
@@ -74,7 +86,7 @@ body {
 }
 
 .item:hover {
-    background-color: rgb(240, 14, 100);
+    background-color: #444;
 }
 
 /* Адаптивная вёрстка */
