@@ -1,9 +1,14 @@
 /* Общие стили */
+html {
+    height: 100%;
+}
+
 body {
     background: black url(../images/фон.jpg) center top fixed no-repeat;
     background-size: cover;
-    overflow-x: hidden;
     scrollbar-width: thin;
+    height: 100%;
+    display: flex;
 }
 
 body::-webkit-scrollbar {
@@ -22,14 +27,13 @@ header {
     left: 0;
     right: 0;
     padding-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     background-color: black; 
     color: azure;
     font-family: Verdana;
     font-size: x-large;
     text-align: center;
 }
-
 
 header .return{
     margin-top: 5px;
@@ -42,70 +46,61 @@ header .return a {
     color: azure;
 }
 
-/* Стили для иконки регистрации в header */
-header img {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 25px;
-    width: 25px;
-}
-
 /* Стили для main */
 main {
+    flex-grow: 1;
     position: relative;
-    top: 80px;
+    top: 70px;
     padding: 10px;
-    height: 100%;
     margin: 20px;
     background-color: rgb(30, 30, 30);
     -webkit-text-fill-color: beige;
-}
-
-/* Стили для описания фильма */
-.flex-container {
     display: flex;
-    margin: 20px;
-}
-
-.movie-details {
-    font-size: 18px;
-}
-
-.movie-details ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-#movie-image {
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
     height: 100%;
 }
 
-#movie-title {
+/* Стиль обёртки заголовка */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    padding: 0;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-item {
+    margin: 20px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
-#movie-description {
-    text-align: left;
-    margin-left: 20px;
+h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-/* Стили для footer */
-footer {
-    -webkit-text-fill-color: darkorange;
-    height: 60px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    font-style: italic
+img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
 }
 
-footer a:visited {
-    color: darkorange;
+span {
+    display: block;
+    font-size: 14px;
 }
 
-
-/* Адаптивная верстка */
+/* Адаптивная вёрстка */
 @media screen and (max-width: 750px) {
     header {
         font-size: large;
@@ -115,37 +110,15 @@ footer a:visited {
         font-size: medium;
     }
 
-    header img {
-        position: absolute;
-        right: 10px;
+    h1 {
+        font-size: 20px;
     }
 
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .movie-details {
+    h2 {
         font-size: 14px;
-    } 
-}
-@media screen and (max-width: 750px) {
-    iframe {
-        height: 350px;
     }
-}
-@media screen and (min-width: 751px) and (max-width: 1000px) {
-    iframe {
-        height: 450px;
-    }
-}
-@media screen and (min-width: 1001px) and (max-width: 1440px) {
-    iframe {
-        height: 600px;
-    }
-}
-@media screen and (min-width: 1440px) {
-    iframe {
-        height: 850px;
+
+    span {
+        font-size: 12px;
     }
 }
