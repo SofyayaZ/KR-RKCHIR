@@ -6,7 +6,6 @@ html {
 body {
     background: black url(../images/фон.jpg) center top fixed no-repeat;
     background-size: cover;
-    overflow: hidden;
     scrollbar-width: thin;
     height: 100%;
     display: flex;
@@ -51,7 +50,7 @@ header .return a {
 main {
     flex-grow: 1;
     position: relative;
-    top: 70px;
+    top: 80px;
     padding: 10px;
     margin: 20px;
     background-color: rgb(30, 30, 30);
@@ -68,7 +67,6 @@ h1 {
     text-align: center;
     font-size: 24px;
     margin: 10px;
-    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -81,6 +79,7 @@ h1 {
 
 .contact-item {
     margin: 20px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
