@@ -1,8 +1,8 @@
 body {
     background-color: rgba(0,0,0,0.3);
-    overflow: hidden;
 }
 
+/* Стили для контейнера с карточками */
 .container {
     height: auto;
     display: grid;
@@ -13,6 +13,7 @@ body {
 }
 
 .item {
+    width: 100%;
     border-radius: 6px;
     background:rgb(0,0,0,0.5);
     overflow: hidden;
@@ -21,18 +22,18 @@ body {
         ".image",
         ".text";
     justify-items: center;
-    
     align-content: center;
     transition: background-color 0.5s ease-in-out;
 }
 
+/* Стили для содержимого карточек */
 .image {
     margin: 5px;
     padding: 5px;
 }
 
 .image img {
-    height: 135px;
+    height: 133px;
     width: auto;
 }
 
@@ -76,6 +77,7 @@ body {
     background-color: rgb(240, 14, 100);
 }
 
+/* Адаптивная вёрстка */
 @media screen and (max-width: 750px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
