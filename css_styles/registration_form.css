@@ -5,6 +5,14 @@ body {
     width: 99%;
 }
 
+body::-webkit-scrollbar {
+    background-color: #444;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
 form {
     background-color: #f2f2f2;
     padding: 20px;
